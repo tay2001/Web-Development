@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>  <title>Camp Classic Registration</title>  
+	<meta charset="utf-8">
+
+	<style>
+		
+		body {
+		  background-color: #cce4ed;
+		  margin-top: 25px; margin-right:  300px; margin-left:  300px; margin-bottom: 100px;
+		  font-family: sans-serif;
+		  }
+
+		h1 {
+		  text-align: center;
+		  font-family: Verdana, sans-serif;
+		  font-weight: bold;
+		  font-size: larger;
+		  text-transform: uppercase;
+		  border-bottom: 1px solid #000000;
+		  margin-top: 30px;
+		}
+
+		p{
+			font-family: Verdana, sans-serif;
+			text-align:  justify;
+			font-weight: lighter;
+		}
+		ul{
+			font-family: Verdana, sans-serif;
+			text-align:  justify;
+			font-weight: lighter;
+		}
+		
+		  h3{
+		  text-align: center;
+		  font-family: Verdana, sans-serif;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  border-bottom: 1px solid #000000;
+		  margin-top: 30px;
+		  }
+
+		  legend {
+            width: 118px;
+            padding: 2px;
+            margin-left: calc(50% - 35px - 20px);
+        }
+	</style>
+
+</head>
+<body>  
+	<h1>Camp Classic Registration</h1>   
+	<br>
+	<form action="/register.php" method="POST">
+		<fieldset>      
+		<legend>REGISTRATION</legend>
+	<p>Enter your information and apply below!</p>      
+	<ul>       
+		<li><label for="fname">Child's First Name:</label>         
+			<input type="text" name="fname" id="fname"></li>
+			<br>
+		<li><label for="lname">Child's Last Name:</label>         
+			<input type="text" name="lname" id="lname"></li>    
+			<br>   
+		<li><label for="email">Email:</label>         
+				<input type="email" name="email" id="email"></li> 
+				<br>
+
+		<li><label for="phone">Phone Number:</label>
+				<input type="tel" name="phone" id="phone"></li>
+				<br>
+
+		<label for="age">Age:</label>
+
+		<select id="ages" name ="age"> 
+			<option value="10">10</option>
+			<option value="11"> 11</option>
+			<option value="12">12</option>  
+			<option value="13">13</option> 
+			<option value="14">14</option>  
+			<option value="15">15</option>  
+			<option value="16">16</option>  
+			<option value="17">17</option>  
+			<option value="18">18</option>  
+		</select>
+
+		<br>
+		
+		<li>Shirt size: 
+			<ul>  <li>
+			<input type="radio" name="size" value="Youth Small"> Youth Small</li>
+			<li>
+			<input type="radio" name="size" value="Youth Med"> Youth Med</li>
+			<li>
+			<input type="radio" name="size" value="Youth Large"> Youth Large</li>
+			<li>
+			<input type="radio" name="size" value="Small" checked="checked"> Small</li>
+			<li>
+			<input type="radio" name="size" value="Med"> Medium</li>
+			<li>
+			<input type="radio" name="size" value="Large"> Large</li>
+		</ul>
+	</li>
+
+<br>
+
+<li>Interesting Activities: 
+			<ul>  <li>
+			<input type="checkbox" name="activities" value="Orchestra"> Orchestra</li>
+
+			<li><input type="checkbox" name="activities" value="Band"> Band</li>
+			<li><input type="checkbox" name="activities" value="Percussion"> Percussion</li>
+			<li><input type="checkbox" name="activities" value="Solo/Duets"> Solo/Duets</li>
+			<li><input type="checkbox" name="activities" value="Small Ensemble"> Small Ensemble</li>
+			<li><input type="checkbox" name="activities" value="Large Ensemble"> Large Ensemble</li>
+		</ul>
+	</li>
+
+	<br>
+		<li><label for="text" name="whycampclassic" id="whycampclassic">Why are you interested in Camp Classic?
+			<br><textarea name="whycampclassic" rows="5" cols="50">My son/daughter is stoked about classical music!</textarea></label>
+		</li>
+		<br>
+
+		<li><form action="/childandinstrument.php" method="POST" enctype="multipart/form-data">  
+			<label>Send a photo of yourself with your instrument!<em>(optional) </em><br>  
+				<input type="file" name="photo"></label></form></li> 
+
+		<br>
+		<li>Please put the date of submission:
+			<br><label for="date" name="timeregistered" id="timeregistered"><input type="date" name="name" value="2021-10-12"></li>
+
+
+			</ul>      
+		<p><input type="submit" action="/registersubmit.php" method="POST" value="Register Now"> <input type="reset" value="Cancel"></p>  
+	</fieldset>  
+
+
+</form>  
+
+<h3>Links</h3>
+<p><a class = "navigation"
+	href = "index.html">Homepage</a></p>
+	</body></html>

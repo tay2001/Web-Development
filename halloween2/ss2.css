@@ -1,0 +1,28 @@
+@charset "UTF-8"
+html {background-color: black;}
+
+ul{
+	text-align:  center;
+	list-style-position:  inside;
+}
+.hoursopen {color: darkred; font-family:impact; font-size: 19px; font-weight: 5px; }
+#location{ text-align: center; font-size: 22px; color: black; font-family: sans-serif; padding: 15px ; background-color: goldenrod;}
+#location h2 { text-align: center; color: dark red; font-family: impact; border-bottom: 5px solid black; margin-right: 200px; margin-left: 200px;}
+
+#top {color: darkred; font-family: impact; text-align: center ; font-size: 25px; padding: 5px; background-color: black}
+#footer {color: darkred; font-family: impact; text-align: center ; font-size: 20px; padding: 6px; background-color: black}
+
+.items {color: black; font-family: impact; text-align: center; font-size: 35px; padding: 2px; background-color: white:}
+.items h3{border-bottom: 5px solid black;  margin-right: 200px; margin-left: 200px;}
+#costumes p {color: black; font-family: sans-serif; font-size: 35px; }
+#decor p {color: black; font-family: sans-serif; font-size: 35px; }
+#accessories p {color: black; font-family: sans-serif; font-size: 35px;}
+
+#costumes {padding: 2px; background-color: darkorange}
+#accessories {padding: 2px; background-color: goldenrod}
+#decor {padding: 2px; background-color: white;}
+
+.cost {color: darkred; font-family: impact; font-size: 25px; font-weight: 5px; }
+
+img {border-radius: 30px; border-style: solid; border: thick; border-color: black}
+
